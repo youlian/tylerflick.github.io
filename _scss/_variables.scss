@@ -1,0 +1,45 @@
+//
+// VARIABLES
+//
+
+// Colors
+$primary: #03A9F4;
+$primaryDark: #01579B;
+$primaryLight: #B3E5FC;
+
+// Blues
+$blue: #03A9F4;
+
+// Neutrals
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$materialDarkGray: #455A64;
+$materialLightGray: #ECEFF1;
+$materialMedGray: #78909C;
+$white: #fff;
+
+// Fonts
+$roboto: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$fontSize: 20px;
+$headerFontSize: 1.75em;
+
+// Size
+$avatarRadius: 40px;
+
+// Durations
+$quick: .1s;
+$standard: .25s;
+$long: .5s;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

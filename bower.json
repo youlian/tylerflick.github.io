@@ -1,0 +1,22 @@
+{
+  "name": "tylerflick.github.io",
+  "version": "1.0.0",
+  "homepage": "tylerflick.com",
+  "description": "Jekyll Polymer Template",
+  "authors": [
+    "tyler.hoeflicker@gmail.com"
+  ],
+  "directory": "bower_components",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-icons": "Polymer/core-icons#~0.5.4",
+    "paper-elements": "Polymer/paper-elements#~0.5.4"
+  }
+}

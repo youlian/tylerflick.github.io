@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body unresolved fullbleed layout vertical>
+    <core-header-panel flex>
+      <core-toolbar>
+        <div flex horizontal layout>
+          <paper-icon-button icon="menu" onclick="document.getElementById('drawer').togglePanel();" self-center></paper-icon-button>
+        </div>
+        <core-item>
+          {{ site.name }}
+        </core-item>
+        <div flex></div>
+      </core-toolbar>
+      <div class="content">
+        <core-drawer-panel forceNarrow drawerWidth="230px" id="drawer">
+          <section drawer>
+            <a href="{{ site.baseurl }}/about">
+              <paper-item><core-image sizing="contain" src="{{ site.avatar }}" class="avatar"></core-image>About Me</paper-item>
+            </a>
+            <hr style="height:1px;border:none;color:#EEEEEE;background-color:#EEEEEE;"/>
+            
+            <a href="{{ site.baseurl }}/"><paper-item><core-icon icon="home" role="img"></core-icon>Home</paper-item></a>
+            <hr style="height:1px;border:none;color:#EEEEEE;background-color:#EEEEEE;"/>
+            
+            <core-item style="font-size: 16px; margin-left: 18px; font-weight: bold">Recent Posts</core-item>
+            
+            {% for post in site.posts offset: 0 limit: 10  %}
+              <a href="{{ site.baseurl }}{{ post.url }}" class="post-link"><paper-item>{{ post.title }}</paper-item></a>
+            {% endfor %}
+          </section>
+          <section center-justified layout main>
+            {{ content }}
+            <footer class="footer">
+              {% include svg-icons.html %}
+            </footer>
+          </section>
+        </core-drawer-panel>
+      </div>
+    </core-header-panel>
+    {% include analytics.html %}
+  </body>
+</html>
