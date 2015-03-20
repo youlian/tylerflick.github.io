@@ -18,11 +18,9 @@
             <a href="{{ site.baseurl }}/about">
               <paper-item><core-image sizing="contain" src="{{ site.avatar }}" class="avatar"></core-image>About Me</paper-item>
             </a>
-            <hr style="height:1px;border:none;color:#EEEEEE;background-color:#EEEEEE;"/>
-            
+            <hr/>
             <a href="{{ site.baseurl }}/"><paper-item><core-icon icon="home" role="img"></core-icon>Home</paper-item></a>
-            <hr style="height:1px;border:none;color:#EEEEEE;background-color:#EEEEEE;"/>
-            
+            <hr/>
             <core-item style="font-size: 16px; margin-left: 18px; font-weight: bold">Recent Posts</core-item>
             
             {% for post in site.posts offset: 0 limit: 10  %}

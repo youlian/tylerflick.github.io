@@ -1,14 +1,12 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+### Hey There!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+My names Tyler and I'm a software engineer in the LA Area. A run across a lot of cool things on the web and decided to start a blog to keep track of them.
 
 ### Contact me
 
