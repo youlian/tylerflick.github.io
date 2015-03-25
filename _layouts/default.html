@@ -15,17 +15,17 @@
       <div class="content">
         <core-drawer-panel forceNarrow drawerWidth="230px" id="drawer">
           <section drawer>
-            <a href="{{ site.baseurl }}/about">
-              <paper-item><core-image sizing="contain" src="{{ site.avatar }}" class="avatar"></core-image>About Me</paper-item>
-            </a>
-            <hr/>
+            <br>
             <a href="{{ site.baseurl }}/"><paper-item><core-icon icon="home" role="img"></core-icon>Home</paper-item></a>
             <hr/>
             <core-item style="font-size: 16px; margin-left: 18px; font-weight: bold">Recent Posts</core-item>
-            
             {% for post in site.posts offset: 0 limit: 10  %}
               <a href="{{ site.baseurl }}{{ post.url }}" class="post-link"><paper-item>{{ post.title }}</paper-item></a>
             {% endfor %}
+            <hr/>
+            <a href="{{ site.baseurl }}/about">
+              <paper-item><core-image sizing="contain" src="{{ site.avatar }}" class="avatar"></core-image>About Me</paper-item>
+            </a> 
           </section>
           <section center-justified layout main>
             {{ content }}

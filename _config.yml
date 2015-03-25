@@ -18,7 +18,9 @@ google_analytics:
 url: www.tylerflick.com
 markdown: redcarpet
 highlighter: pygments
-permalink: /:title/
+
+permalink: pretty
+
 version: v1.0.0
 sass:
   sass_dir: _scss
