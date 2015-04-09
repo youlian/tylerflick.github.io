@@ -9,11 +9,11 @@ permalink: /
   <section>
     <paper-shadow z="1">
       <article class="post">    
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <h1>{{ post.title }}</h1>
         <div>
-          {{ post.content | truncatewords:40}}
+          {{ post.content | truncatewords:75}}
         </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <a href="{{ site.baseurl }}{{ post.url }}"><paper-fab mini icon="open-in-new" class="open-full-article"></paper-fab></a>
       </article>
     </paper-shadow>
   </section>

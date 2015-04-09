@@ -1,6 +1,6 @@
 ---
 ---
-
+@import "_palette";
 @import "_variables";
 @import "_animations";
 
@@ -11,7 +11,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $roboto;
-  color: $darkerGray;
+  color: $secondary-text-color;
   font-weight: bold;
 
   line-height: 1.7;
@@ -40,7 +40,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $secondary-text-color;
 }
 
 p {
@@ -48,11 +48,11 @@ p {
 }
 
 a {
-  color: $materialDarkGray;
+  color: $secondary-text-color;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $primary;
+    color: $primary-color;
   }
 }
 
@@ -106,7 +106,7 @@ strong, b {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $background-color;
 }
 
 footer {
@@ -123,8 +123,12 @@ footer {
   margin: 10px 10px 10px 0px;
 }
 
+.open-full-article {
+  background-color: $accent-color;
+}
+
 .post {
-  background-color: $white;
+  background-color: $primary-color-text;
   margin-top: 4%;
   padding: 1% 4% 4% 4%;
   h1 {
@@ -146,23 +150,43 @@ footer {
 ////////////////////////////
 
 core-drawer-panel {
-  background-color: $materialLightGray;
+  background-color: $background-color;
   hr {
     height: 1px;
     border: none;
-    color: $lightGray;
-    background-color: $lightGray;  
+    color: $background-color;
+    background-color: $background-color;  
   }
 }
 
 core-toolbar {
-  background-color: $primary;
-  color: $white; 
+  background-color: $primary-color;
+  color: $primary-color-text; 
   font-size: $headerFontSize;
+  
+  a {
+    // TODO: Find a font for the title
+  }
+  
+  a:link {
+      color: $primary-color-text;
+  }
+  
+  a:visited {
+      color: $primary-color-text;
+  }
+  
+  a:hover {
+      color: $primary-color-text;
+  }
+  
+  a:active {
+      color: $primary-color-text;
+  }
 }
 
 [drawer] {
-    background-color: $white;
+    background-color: $primary-color-text;
 }
 
 [main] {
@@ -187,7 +211,7 @@ core-toolbar {
 }
 
 .navmenu {
-  background-color: $white;
+  background-color: $primary-color-text;
 }
 
 .post-link * {

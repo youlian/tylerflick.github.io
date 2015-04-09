@@ -7,9 +7,11 @@
         <div flex horizontal layout>
           <paper-icon-button icon="menu" onclick="document.getElementById('drawer').togglePanel();" self-center></paper-icon-button>
         </div>
-        <core-item>
-          {{ site.name }}
-        </core-item>
+        <a href="{{ site.baseurl }}/">
+          <core-item>
+            {{ site.name }}
+          </core-item>
+        </a>
         <div flex></div>
       </core-toolbar>
       <div class="content">
