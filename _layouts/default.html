@@ -26,8 +26,13 @@
             {% endfor %}
             <hr/>
             <a href="{{ site.baseurl }}/about">
-              <paper-item><core-image sizing="contain" src="{{ site.baseurl }}/{{ site.avatar }}" class="avatar"></core-image>About Me</paper-item>
+              <paper-item>
+                  <core-image sizing="contain" src="{{ site.baseurl }}/{{ site.avatar }}" class="avatar"></core-image>
+                  About Me
+              </paper-item>
             </a> 
+            <core-item class="credits">Built for Github with <core-icon icon="polymer"></core-icon>
+            </core-item>
           </section>
           <section center-justified layout main>
             {{ content }}

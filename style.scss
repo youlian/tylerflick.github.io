@@ -145,10 +145,8 @@ footer {
 /* About Page */
 ////////////////
 
-////////////////////////////
-/* Polymer Customizations */
-////////////////////////////
 
+/* Drawer */
 core-drawer-panel {
   background-color: $background-color;
   hr {
@@ -158,6 +156,26 @@ core-drawer-panel {
     background-color: $background-color;  
   }
 }
+
+[drawer] {
+  background-color: $primary-color-text;
+  
+  .credits {
+    font-size: $font-size-standout;
+    color: $secondary-text-color;
+    position: absolute; 
+    bottom: 1%; 
+    margin-left: 7%;      
+  
+    core-icon[icon="polymer"] {
+      color: $polymer-color;
+      height: 1.2em;
+      width: 1.2em;
+      margin-left: .4em;
+    }
+  }
+}
+
 
 core-toolbar {
   background-color: $primary-color;
@@ -183,10 +201,6 @@ core-toolbar {
   a:active {
       color: $primary-color-text;
   }
-}
-
-[drawer] {
-    background-color: $primary-color-text;
 }
 
 [main] {
