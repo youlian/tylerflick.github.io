@@ -161,17 +161,19 @@ core-drawer-panel {
   background-color: $primary-color-text;
   
   .credits {
-    font-size: $font-size-standout;
+    font-size: $font-size-small;
     color: $secondary-text-color;
     position: absolute; 
     bottom: 1%; 
-    margin-left: 7%;      
+    width: 100%;
+    text-align: center;
   
     core-icon[icon="polymer"] {
       color: $polymer-color;
-      height: 1.2em;
-      width: 1.2em;
-      margin-left: .4em;
+      height: .6 em;
+      width: .6 em;
+      margin-left: .3em;
+      margin-right: .3em;
     }
   }
 }
