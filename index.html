@@ -10,10 +10,12 @@ permalink: /
     <paper-shadow z="1">
       <article class="post">    
         <div class="post-head">
+          <a href="{{ site.baseurl }}{{ post.url }}">
           <h1>          
             <core-image sizing="contain" src="../images/{{ post.image }}" class="post-title-image"></core-image>
             {{ post.title }}
           </h1>
+          </a>
         </div>
         <div>
           {{ post.content | truncatewords: 250}}
