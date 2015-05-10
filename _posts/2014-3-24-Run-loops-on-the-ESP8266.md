@@ -4,6 +4,7 @@ title: Run loops on the ESP8266
 category: ESP8266
 author: Tyler Hoeflicker
 icon: T
+image: esp8266.jpeg
 excerpt: Getting started with loop events in the esp-open-sdk.
 ---
 

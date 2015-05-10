@@ -9,9 +9,14 @@ permalink: /
   <section>
     <paper-shadow z="1">
       <article class="post">    
-        <h1>{{ post.title }}</h1>
+        <div class="post-head">
+          <h1>          
+            <core-image sizing="contain" src="../images/{{ post.image }}" class="post-title-image"></core-image>
+            {{ post.title }}
+          </h1>
+        </div>
         <div>
-          {{ post.content | truncatewords:75}}
+          {{ post.content | truncatewords: 250}}
         </div>
         <a href="{{ site.baseurl }}{{ post.url }}"><paper-fab mini icon="open-in-new" class="open-full-article"></paper-fab></a>
       </article>

@@ -115,11 +115,11 @@ footer {
 }
 
 .avatar {
-	width: $avatarRadius;
-	height: $avatarRadius;
-	border-radius: $avatarRadius/2;
-	-webkit-border-radius: $avatarRadius/2;
-	-moz-border-radius: $avatarRadius/2;
+	width: $avatar-radius;
+	height: $avatar-radius;
+	border-radius: $avatar-radius/2;
+	-webkit-border-radius: $avatar-radius/2;
+	-moz-border-radius: $avatar-radius/2;
   margin: 10px 10px 10px 0px;
 }
 
@@ -180,13 +180,9 @@ core-drawer-panel {
 
 
 core-toolbar {
-  background-color: $primary-color;
+  background-color: $primary-color-dark;
   color: $primary-color-text; 
   font-size: $headerFontSize;
-  
-  a {
-    // TODO: Find a font for the title
-  }
   
   a:link {
       color: $primary-color-text;
@@ -233,6 +229,25 @@ core-toolbar {
 .post-link * {
   font-size: 1em;
   padding-left: 1.25em;
+}
+
+.post-head {
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+  core-image {
+    float: left;
+    margin-right: 2%;
+    vertical-align: middle;
+  	width: $post-image-radius;
+  	height: $post-image-radius;
+  	border-radius: $post-image-radius/2;
+  	-webkit-border-radius: $post-image-radius/2;
+  	-moz-border-radius: $post-image-radius/2;
+    border: $primary-color 1px solid;
+  }
 }
 
 paper-item {
