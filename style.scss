@@ -156,8 +156,15 @@ core-drawer-panel {
   hr {
     height: 1px;
     border: none;
+    margin: 0;
     color: $background-color;
     background-color: $background-color;  
+  }
+  #recent-posts {
+    margin-bottom: 25px;
+  }
+  #icon-home {
+    padding-top: 5px;
   }
 }
 
