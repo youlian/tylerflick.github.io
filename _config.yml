@@ -1,4 +1,4 @@
-name: Tylerflick's Blog
+name: Tyler's Blog of Tomorrow
 description: Bookmarks of my thoughts
 avatar: ../images/avatar.jpeg
 footer-links:
@@ -14,19 +14,21 @@ footer-links:
   twitter:
   stackoverflow: users/1821331/tylerflick
 disqus: 
-google_analytics: 
-url: www.tylerflick.com
+google_analytics:
+
+url: blog.tylerflick.com
 markdown: redcarpet
 highlighter: pygments
 
 permalink: pretty
 
 version: v1.0.0
+
 sass:
-  sass_dir: _scss
+  sass_dir: _assets/_stylesheets/
   style: :compressed
 
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
-exclude: ["bower.json"]
+exclude: ["bower.json", ".sass-cache", ".gitignore"]

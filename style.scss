@@ -6,11 +6,11 @@
 
 html, body {
   font-size: 100%;
-  font: $fontSize/1.4 $roboto;
+  font: $fontSize/1.4 'Roboto';
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $roboto;
+  font-family: 'Roboto';
   color: $secondary-text-color;
   font-weight: bold;
 
@@ -100,6 +100,10 @@ strong, b {
   img {
     border-radius: 5px;
   }
+}
+
+#site-name {
+  font-family: 'Nova Square';
 }
 
 .wrapper-footer {
