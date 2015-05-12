@@ -1,0 +1,26 @@
+// Fonts
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Font Sizes
+$fontSize: 20px;
+$font-size-standout: 1.2em;
+$font-size-small: .9em;
+$headerFontSize: 1.75em;
+
+// Sizes
+$avatar-radius: 40px;
+$post-image-radius: 80px;
+
+// Durations
+$quick: .1s;
+$standard: .25s;
+$long: .5s;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
